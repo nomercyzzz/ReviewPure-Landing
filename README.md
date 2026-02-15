@@ -10,3 +10,5 @@
 
 ## 🚀 GitHub Pages
 
+https://nomercyzzz.github.io/ReviewPure-Landing/
+
