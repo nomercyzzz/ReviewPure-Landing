@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body class="bg-dark text-white font-sans">
+
+        <div class="min-h-screen flex items-center justify-center relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-700/20 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="relative z-10 text-center px-8">
+                <h1 class="text-9xl font-black bg-gradient-to-r from-purple-500 via-fuchsia-500 to-purple-400 bg-clip-text text-transparent mb-6 animate-fade-in">
+                    404
+                </h1>
+
+                <h2 class="text-3xl font-bold mb-4 animate-fade-in">
+                    Ой! Страница не найдена
+                </h2>
+                <p class="text-gray-400 text-lg max-w-md mx-auto mb-10 leading-relaxed animate-fade-in">
+                    Возможно, эта страница была удалена или вы ввели неправильный адрес. Попробуйте вернуться на главную.
+                </p>
+
+                <div class="flex items-center justify-center gap-4 mb-12 animate-fade-in">
+
+                    <button onclick="window.location.href='index.html'"
+                        class="bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg shadow-purple-900/40 transition">
+                        На главную 🏠
+                    </button>
+                    <button onclick="window.location.href=''"
+                        class="border border-gray-700 hover:border-gray-500  text-gray-300 hover:text-white font-semibold px-8 py-3.5 rounded-xl transition">
+                        Связаться с нами 📞
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
