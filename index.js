@@ -17,4 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     blocks.forEach(function (el) {
         observer.observe(el);
     });
+
+    const button = document.querySelectorAll(".faq-toggle");
+    const item = document.querySelectorAll(".faq-item");
+
+    button.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            item[index].classList.toggle('open');
+        })
+    })
 });
