@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     blocks.forEach(function (el) {
-        observer.observe(el);
+        // исключаем эл с классом faq item
+        if (!el.classList.contains("faq-item")) {
+            observer.observe(el);
+        }
     });
 
     const button = document.querySelectorAll(".faq-toggle");
@@ -25,5 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener('click', () => {
             item[index].classList.toggle('open');
         })
+    });
+
+    // анимация с задержкой 
+    item.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add("active");
+        }, 100 * index + 50);
     })
 });
