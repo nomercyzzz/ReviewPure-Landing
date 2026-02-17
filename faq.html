@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body class="bg-dark text-white font-sans">
+
+        <section class="min-h-screen flex items-center justify-center relative py-10">
+            <div class="absolute top-20 right-0 w-[400px] h-[400px] bg-fuchsia-700/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-8 w-full">
+                <div class="text-center mb-12 reveal">
+
+                    <span class="text-purple-400 font-semibold text-sm uppercase tracking-wider mb-4 block">❓FAQ</span>
+
+                    <h1 class="text-5xl font-bold mb-6">
+                        Часто задаваемые вопросы
+                    </h1>
+
+                    <p class="text-gray-400 text-lg max-w-xl mx-auto leading-relaxed">
+                        Собрали ответы на самые популярные вопросы. Не нашли свой -
+                        <a href="contacts.html" class="text-purple-400 hover:text-white transition">
+                            напишите нам
+                        </a>
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+
+                    <div class="faq-item reveal bg-dark-card border border-dark-border rounded-2xl hover:border-purple-800/50 transition">
+                        <div class="faq-toggle w-full flex items-center justify-between p-6 text-left cursor-pointer">
+
+                            <span class="font-bold text-lg">Расширение действительно бесплатное?</span>
+                            <span class="faq-icon text-purple-400 text-4xl bottom-1 relative">+</span>
+
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner px-6 pb-6">
+                                <p class="text-gray-400 leading-relaxed">
+                                    Да, ReviewPure полностью бесплатный. Мы не берём деньги за установку и использование. 
+                                    Все функции - AI-саммари, радар брака и фильтр накруток - доступны без ограничений.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal bg-dark-card border border-dark-border rounded-2xl hover:border-purple-800/50 transition">
+                        <div class="faq-toggle w-full flex items-center justify-between p-6 text-left cursor-pointer">
+
+                            <span class="font-bold text-lg">Какие маркетплейсы поддерживаются?</span>
+                            <span class="faq-icon text-purple-400 text-4xl bottom-1 relative">+</span>
+
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner px-6 pb-6">
+                                <p class="text-gray-400 leading-relaxed">
+                                    Сейчас работаем с Wildberries и Ozon. В планах - Яндекс Маркет и другие площадки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal bg-dark-card border border-dark-border rounded-2xl hover:border-purple-800/50 transition">
+                        <div class="faq-toggle w-full flex items-center justify-between p-6 text-left cursor-pointer">
+
+                            <span class="font-bold text-lg">Как установить расширение?</span>
+                            <span class="faq-icon text-purple-400 text-4xl bottom-1 relative">+</span>
+
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner px-6 pb-6">
+                                <p class="text-gray-400 leading-relaxed">
+                                    Перейдите в Chrome Web Store, найдите ReviewPure и нажмите Установить. 
+                                    Весит менее 2 МБ, ставится за 10 секунд.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal bg-dark-card border border-dark-border rounded-2xl hover:border-purple-800/50 transition">
+                        <div class="faq-toggle w-full flex items-center justify-between p-6 text-left cursor-pointer">
+
+                            <span class="font-bold text-lg">Расширение замедляет браузер?</span>
+                            <span class="faq-icon text-purple-400 text-4xl bottom-1 relative">+</span>
+
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner px-6 pb-6">
+                                <p class="text-gray-400 leading-relaxed">
+                                    Нет. ReviewPure запускается только на страницах товаров WB и Ozon. На остальных сайтах расширение спит.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal bg-dark-card border border-dark-border rounded-2xl hover:border-purple-800/50 transition">
+                        <div class="faq-toggle w-full flex items-center justify-between p-6 text-left cursor-pointer">
+
+                            <span class="font-bold text-lg">Мои данные в безопасности?</span>
+                            <span class="faq-icon text-purple-400 text-4xl bottom-1 relative">+</span>
+
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner px-6 pb-6">
+                                <p class="text-gray-400 leading-relaxed">
+                                    ReviewPure не собирает персональные данные. Мы анализируем только публичные отзывы на странице товара.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal bg-dark-card border border-dark-border rounded-2xl hover:border-purple-800/50 transition">
+                        <div class="faq-toggle w-full flex items-center justify-between p-6 text-left cursor-pointer">
+
+                            <span class="font-bold text-lg">Можно ли использовать на телефоне?</span>
+                            <span class="faq-icon text-purple-400 text-4xl bottom-1 relative">+</span>
+
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner px-6 pb-6">
+                                <p class="text-gray-400 leading-relaxed">
+                                    Пока ReviewPure работает только в Google Chrome на компьютере. Мобильная версия в разработке.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-16 reveal">
+                    <p class="text-gray-400 mb-4">Не нашли ответ на свой вопрос?</p>
+                    <a href="contacts.html" class="inline-block bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg shadow-purple-900/40">
+                        Написать нам 📬
+                    </a>
+                </div>
+                <div class="text-center mt-4 reveal">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition text-sm">
+                        Вернуться на главную
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <footer class="border-t border-dark-border py-12">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div>
+                <p class="text-gray-600 text-sm mt-2"> @2026 ReviewPure </p>
+            </div>
+            <div class="flex items-center gap-6">
+
+                <a href="index.html" class="text-gray-500 hover:text-white transition text-sm">Главная</a>
+                <a href="contacts.html" class="text-gray-500 hover:text-white transition text-sm">Контакты</a>
+                <a href="faq.html" class="text-gray-500 hover:text-white transition text-sm">FAQ</a>
+                <a href="https://github.com/nomercyzzz" class="text-gray-500 hover:text-white transition text-sm">GitHub</a>
+                <a href="https://web.telegram.org/" class="text-gray-500 hover:text-white transition text-sm">Telegram</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>

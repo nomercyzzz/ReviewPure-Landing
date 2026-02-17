@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    <body class="bg-dark text-white font-sans">
+
+        <section class="min-h-screen flex items-center justify-center relative py-10">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-700/15 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-6xl mx-auto px-8 w-full">
+                <div class="text-center mb-16 reveal">
+
+                    <span class="text-purple-400 font-semibold text-sm uppercase tracking-wider mb-3 block">📬 Контакты</span>
+                    <h1 class="text-5xl font-bold mb-6">Свяжитесь с нами</h1>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                        Есть вопрос, предложение или нашли баг? Напишите нам - мы ответим в течение 24 часов.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+                    <!-- форма -->
+                    <div class="reveal slide-left">
+                        <h2 class="text-2xl font-bold mb-6">Оставьте сообщение</h2>
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Имя</label>
+                                <input type="text" placeholder="Ваше имя" required
+                                    class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                <input type="email" placeholder="example@email.com" required
+                                    class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Тема</label>
+                                <select required
+                                    class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition">
+                                    <option value="" disabled selected>Выберите тему</option>
+                                    <option value="suggestion">Предложение</option>
+                                    <option value="bug">Сообщить о баге</option>
+                                    <option value="question">Вопрос</option>
+                                    <option value="thanks">Благодарность</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Сообщение</label>
+                                <textarea placeholder="Ваше сообщение..." rows="5" required
+                                    class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition resize-none"></textarea>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="agree" required class="mt-1 accent-purple-600">
+                                <label for="agree" class="text-gray-400 text-sm">
+                                    Соглашаюсь на обработку персональных данных
+                                </label>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg shadow-purple-900/40">
+                                Отправить сообщение
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- контактная информация -->
+                    <div class="reveal slide-right flex flex-col">
+                        <h2 class="text-2xl font-bold mb-6">
+                            Контактная информация
+                        </h2>
+
+                        <div class="flex flex-col gap-4 flex-1">
+                            <div class="bg-dark-card border border-dark-border rounded-2xl p-4 hover:border-purple-800/50 transition flex-1 flex flex-col justify-center">
+                                
+                                <h3 class="font-bold text-xl mb-1">📍Адрес</h3>
+                                <p class="text-gray-400 text-sm p-2">Москва</p>
+
+                            </div>
+                            <div class="bg-dark-card border border-dark-border rounded-2xl p-4 hover:border-purple-800/50 transition flex-1 flex flex-col justify-center">
+
+                                <h3 class="font-bold text-xl mb-1">📞 Телефон</h3>
+                                <p class="text-gray-400 text-sm p-1 pt-2">+7 (999) 999-99-99</p>
+                            </div>
+                            <div class="bg-dark-card border border-dark-border rounded-2xl p-4 hover:border-purple-800/50 transition flex-1 flex flex-col justify-center">
+
+                                <h3 class="font-bold text-xl mb-1">✉️ Почта</h3>
+                                <p class="text-gray-400 text-sm p-1 pt-2">reviewpure@mail.ru</p>
+                            </div>
+
+                            <div class="bg-dark-card border border-dark-border rounded-2xl p-4 hover:border-purple-800/50 transition flex-1 flex flex-col justify-center">
+                                <h3 class="font-bold text-xl mb-1">💬 Соцсети</h3>
+
+                                <div class="flex items-center gap-4 mt-2">
+                                    <a href="https://web.telegram.org/" class="text-purple-400 hover:text-white transition text-sm p-1 pt-2">
+                                        Telegram
+                                    </a>
+                                    <a href="https://github.com/nomercyzzz" class="text-purple-400 hover:text-white transition text-sm">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-12 reveal">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition text-sm">
+                        Вернуться на главную
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <footer class="border-t border-dark-border py-12">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div>
+                <p class="text-gray-600 text-sm mt-2"> @2026 ReviewPure </p>
+            </div>
+            <div class="flex items-center gap-6">
+
+                <a href="index.html" class="text-gray-500 hover:text-white transition text-sm">Главная</a>
+                <a href="contacts.html" class="text-gray-500 hover:text-white transition text-sm">Контакты</a>
+                <a href="faq.html" class="text-gray-500 hover:text-white transition text-sm">FAQ</a>
+                <a href="https://github.com/nomercyzzz" class="text-gray-500 hover:text-white transition text-sm">GitHub</a>
+                <a href="https://web.telegram.org/" class="text-gray-500 hover:text-white transition text-sm">Telegram</a>
+
+            </div>
+        </div>
+    </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
