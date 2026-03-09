@@ -34,17 +34,27 @@
                         <form id="contactForm" class="space-y-5">
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Имя</label>
-                                <input type="text" placeholder="Ваше имя" required
+                                <input 
+                                    id="name"
+                                    type="text" 
+                                    placeholder="Ваше имя" 
+                                    required
                                     class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                                <input type="email" placeholder="example@email.com" required
+                                <input
+                                    id="email" 
+                                    type="email" 
+                                    placeholder="example@email.com" 
+                                    required
                                     class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Тема</label>
-                                <select required
+                                <select
+                                    id="topic" 
+                                    required
                                     class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition">
                                     <option value="" disabled selected>Выберите тему</option>
                                     <option value="suggestion">Предложение</option>
@@ -55,7 +65,11 @@
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Сообщение</label>
-                                <textarea placeholder="Ваше сообщение..." rows="5" required
+                                <textarea   
+                                    id="message" 
+                                    placeholder="Ваше сообщение..." 
+                                    rows="5" 
+                                    required
                                     class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition resize-none"></textarea>
                             </div>
                             <div class="flex items-start gap-3">
